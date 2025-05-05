@@ -4,7 +4,33 @@
     android:viewportWidth="24"
     android:viewportHeight="24">
 
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#4285F4"
+        android:pathData="M12,2a10,10 0 1,0 0,20 10,10 0 0,0 0,-20z"/>
+
+    <!-- Double Speech Bubble -->
+    <group android:translateX="6" android:translateY="5">
+        <!-- Main Bubble -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M3,7a5,5 0 0,1 5,-5h4a5,5 0 0,1 5,5v4a5,5 0 0,1 -5,5H8l-3,3V7z"/>
+
+        <!-- Small Bubble Tip -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M11,14l-1,2v-2H8a1,1 0 0,1 -1,-1v-1h4a1,1 0 0,0 1,-1V9h1a1,1 0 0,1 1,1v3a1,1 0 0,1 -1,1H11z"/>
+
+        <!-- Smiley Face -->
+        <path
+            android:fillColor="#4285F4"
+            android:pathData="M7,9a1,1 0 1,0 0,-2 1,1 0 0,0 0,2zM11,9a1,1 0 1,0 0,-2 1,1 0 0,0 0,2zM7,12h4v1H7z"/>
+    </group>
+
+    <!-- Sparkle Effect -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M12,2C6.48,2 2,6.03 2,10.5c0,2.27 1.2,4.33 3.17,5.75L4,22l5.03,-3.03c0.95,0.26 1.96,0.41 2.97,0.41 5.52,0 10,-4.03 10,-8.5S17.52,2 12,2zM7,9h10v2H7V9zm6,4H7v-2h6v2z"/>
+        android:pathData="M17,5l1,-2 1,2 2,1 -2,1 -1,2 -1,-2 -2,-1z"
+        android:strokeWidth="0.5"
+        android:strokeColor="#4285F4"/>
 </vector>
