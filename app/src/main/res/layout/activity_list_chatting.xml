@@ -1,24 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/background"
-    android:orientation="vertical"
-    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:elevation="4dp"
+    android:background="#F5F5F5">
 
     <TextView
-        android:text="Daftar Chat"
-        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Percakapan Terakhir"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@color/primary"
-        android:layout_marginBottom="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#3F51B5"
+        android:textColor="#FFFFFF"/>
 
     <ListView
         android:id="@+id/listView"
-        android:divider="@color/primary"
-        android:dividerHeight="1dp"
-        android:background="@color/white"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:padding="8dp"/>
 </LinearLayout>
