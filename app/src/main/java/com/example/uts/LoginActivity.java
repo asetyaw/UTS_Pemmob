@@ -15,18 +15,17 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        etUsername = findViewById(R.id.etUsername);
-        etPassword = findViewById(R.id.etPassword);
-        btnLogin = findViewById(R.id.btnLogin);
-        btnRegister = findViewById(R.id.btnRegister);
+        etUsername = findViewById(R.id.etUsername); //menangkap input pengguna
+        etPassword = findViewById(R.id.etPassword); //menangkap input pengguna
+        btnLogin = findViewById(R.id.btnLogin); //login dan mendaftar
+        btnRegister = findViewById(R.id.btnRegister);   //login dan mendaftar
 
         btnLogin.setOnClickListener(v -> {
-            // bisa tambahkan validasi di sini
-            startActivity(new Intent(LoginActivity.this, ListChattingActivity.class));
+            startActivity(new Intent(LoginActivity.this, ListChattingActivity.class));  // Arahkan ke ListChattingActivity setelah login
         });
 
         btnRegister.setOnClickListener(v -> {
-            startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+            startActivity(new Intent(LoginActivity.this, RegisterActivity.class));  // Arahkan ke RegisterActivity
         });
     }
 }

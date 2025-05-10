@@ -9,9 +9,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class RegisterActivity extends AppCompatActivity {
-    EditText etNewUser;
-    Button btnSubmit;
-    ImageView logo;
+    EditText etNewUser; //Menangkap input nama pengguna baru
+    Button btnSubmit;   //Button untuk mengirimkan data registrasi
+    ImageView logo;     //Gambar logo yang ditampilkan di layar
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +23,9 @@ public class RegisterActivity extends AppCompatActivity {
         logo = findViewById(R.id.ivLogo);
 
         btnSubmit.setOnClickListener(v -> {
-            Log.d("Register", "Register button clicked!");
-            Toast.makeText(this, "Pendaftaran berhasil!", Toast.LENGTH_SHORT).show();
-            Toast.makeText(this, "Selamat datang", Toast.LENGTH_LONG).show();
+            Log.d("Register", "Register button clicked!");  // Logging untuk mengetahui jika tombol ditekan
+            Toast.makeText(this, "Pendaftaran berhasil!", Toast.LENGTH_SHORT).show();   // Menampilkan pesan sukses
+            Toast.makeText(this, "Selamat datang", Toast.LENGTH_LONG).show();   // Menampilkan pesan selamat datang
         });
     }
 }

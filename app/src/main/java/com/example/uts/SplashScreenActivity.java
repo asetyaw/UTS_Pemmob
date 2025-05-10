@@ -14,8 +14,8 @@ public class SplashScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
 
         new Handler().postDelayed(() -> {
-            startActivity(new Intent(SplashScreenActivity.this, LoginActivity.class));
-            finish();
+            startActivity(new Intent(SplashScreenActivity.this, LoginActivity.class));  // Arahkan ke LoginActivity setelah splash screen selesai
+            finish();   // Tutup aktivitas splash setelah 3 detik
         }, 3000); // 3 detik splash
     }
 }

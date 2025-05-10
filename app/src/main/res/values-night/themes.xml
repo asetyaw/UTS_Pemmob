@@ -13,4 +13,11 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <color name="primary">#7986CB</color> <!-- Softer Indigo -->
+    <color name="secondary">#FFD54F</color>
+    <color name="background">#121212</color>
+    <color name="textPrimary">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
 </resources>
